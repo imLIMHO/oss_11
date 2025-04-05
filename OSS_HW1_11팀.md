@@ -66,6 +66,12 @@ MATLAB의 플로팅 기능
  - 3D 플로팅: ①lot3: 3D 선 그래프를 생성한다.예: plot3(x, y, z)는 3D 공간에서 선을 플롯한다. ②surf: 3D 표면 플롯을 생성한다.예: surf(Z)는 행렬 Z를 3D 표면으로 표시한다. ③contour,contourf: 등고선 플롯을 생성한다.예: contourf(x, y, z)는 2D 등고선을 색상으로 채워 표시한다.
  - 특수 플로팅: ①histogram: 히스토그램을 생성해 데이터 분포를 시각화한다. ②polar: 극좌표 플롯을 생성한다.③comet,comet3: 애니메이션 효과가 있는 플롯이다.
 
+(3) 다중 플롯 및 서브플롯
+ - subplot 함수: 하나의 창에 여러 플롯을 배열한다.
+예: subplot(2, 3, 1)은 2x3 그리드의 첫 번째 위치에 플롯을 생성한다.
+- hold on 및 hold off: 여러 플롯을 한 그래프에 겹쳐 표시한다.
+예: plot(x, y1); hold on; plot(x, y2); hold off;는 두 함수를 한 그래프에 표시한다.
+
 
 
 
